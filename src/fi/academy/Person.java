@@ -1,4 +1,3 @@
-
 public class Person {
     String address;
     String city;
@@ -46,3 +45,4 @@ public class Person {
                 '}';
     }
 }
+
