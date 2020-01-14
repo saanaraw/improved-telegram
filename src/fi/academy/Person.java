@@ -1,30 +1,48 @@
-package fi.academy;
-
 public class Person {
-    private String name;
-    private int age;
-    public Person(String name, int age) {
-         this.name = name;
-         this.age = age;
-    }
+    String address;
+    String city;
+    String phoneNumber;
+
     public Person() {
-        this.name = "";
-        this.age = 0;
-    }
-    public String getName() {
-        return this.name;
-    }
-    public int getAge() {
-        return this.age;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-    public String toString(){
-        return this.name + " , " + this.age;
     }
 
+    public Person(String address, String city, String phoneNumber) {
+        this.address = address;
+        this.city = city;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
 }
+
